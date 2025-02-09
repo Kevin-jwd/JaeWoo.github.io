@@ -35,6 +35,7 @@ nav {
     gap: 180px;
     opacity: 0;
     animation: fadein 1.6s 1s forwards;
+    padding-left: 78px;
 }
 
 a {
