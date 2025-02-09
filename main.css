@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('main_background.jpg') no-repeat top center/cover;
+    background-size: cover;
+    background-position: center top;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gray-text {
+    color: #444; /* 짙은 회색 */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 100% auto !important;
+        background-position: center top !important;
+    }
+}
