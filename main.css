@@ -1,3 +1,5 @@
+@import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@ body {
     background-size: cover;
     background-attachment: fixed;  /* 배경이 스크롤에 따라 고정 */
     background-position: center top;
-    font-family: Arial, sans-serif;
+    font-family: 'Galmuri14', sans-serif;
     color: white;
     text-align: center;
     display: block;
