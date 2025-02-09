@@ -11,7 +11,7 @@ html, body {
 body {
     background: url('galaxy-night-landscape.jpg') no-repeat top center/cover;
     background-size: cover;
-    background-attachment: fixed;  /* 배경이 스크롤에 따라 고정 */
+    background-attachment: fixed;
     background-position: center top;
     font-family: 'Galmuri14', sans-serif;
     color: white;
@@ -24,13 +24,34 @@ body {
 
 p {
     font-size: 40px;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 150px;
-    animation: slidein 1s;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.slide {
+    opacity: 0;
+    display: block;
+    transform: translateY(50px);
+    animation: slidein 1.6s forwards;
+    margin-top: 5px;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 0.8s; 
+}
+
+.slide:nth-child(3) {
+    animation-delay: 1.6s;
 }
 
 .gray-text {
-    color: #777; /* 짙은 회색 */
+    color: #777; 
 }
 
 nav {
@@ -42,7 +63,7 @@ nav {
     justify-content: flex-start;
     gap: 50px;
     opacity: 0;
-    animation: fadein 1.6s 1s forwards;
+    animation: fadein 2s 2.7s forwards;
     padding-left: 78px;
 }
 
@@ -65,10 +86,12 @@ a:hover {
 
 @keyframes slidein {
     from {
-        margin-top: 70px;
+        opacity: 0;
+        transform: translateY(50px);
     }
     to {
-        margin-top: 100px;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
