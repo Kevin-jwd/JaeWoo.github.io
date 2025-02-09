@@ -3,11 +3,13 @@ html, body {
     padding: 0;
     height: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
-    background: url('main_background.jpg') no-repeat top center/cover;
+    background: url('galaxy-night-landscape.jpg') no-repeat top center/cover;
     background-size: cover;
+    background-attachment: fixed;  /* 배경이 스크롤에 따라 고정 */
     background-position: center top;
     font-family: Arial, sans-serif;
     color: white;
