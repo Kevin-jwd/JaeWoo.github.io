@@ -60,7 +60,8 @@ nav {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    margin-right: 700px;
     gap: 50px;
     opacity: 0;
     animation: fadein 2s 2.7s forwards;
