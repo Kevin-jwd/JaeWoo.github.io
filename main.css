@@ -28,13 +28,17 @@ p {
 }
 
 .gray-text {
-    color: #444; /* 짙은 회색 */
+    color: #777; /* 짙은 회색 */
 }
 
 nav {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 180px;
+    justify-content: flex-start;
+    gap: 50px;
     opacity: 0;
     animation: fadein 1.6s 1s forwards;
     padding-left: 78px;
