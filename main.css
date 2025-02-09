@@ -15,20 +15,13 @@ body {
     background-position: center top;
     font-family: 'Galmuri14', sans-serif;
     color: white;
-    text-align: center;
+    text-align: left;
     display: block;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-p {
-    font-size: 70px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    margin-left: 100px;
-    text-align: left;
-}
 
 .slide {
     opacity: 0;
@@ -36,6 +29,30 @@ p {
     transform: translateY(50px);
     animation: slidein 1.6s forwards;
     margin-top: 5px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    opacity: 0;
+    animation: fadein 2s 2.7s forwards;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
+    padding: 15px 0;
+    padding-left: 78px; 
+    z-index: 1000;
+}
+
+#main_title {
+    font-size: 70px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 160px;
+    text-align: left;
 }
 
 .slide:nth-child(1) {
@@ -54,27 +71,25 @@ p {
     color: #777; 
 }
 
-nav {
-    position: fixed;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    opacity: 0;
-    animation: fadein 2s 2.7s forwards;
-    padding-left: 78px;
-}
-
-a {
+.top_nav {
     color: white;
     text-decoration: none;
     font-size: 25px;
 }
 
-a:hover {
+.top_nav:hover {
     text-decoration: underline;
+}
+
+.indices {
+    opacity: 0;
+    animation:fadein 2s 2.7s forwards;
+}
+
+.index_content {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 150px;
 }
 
 @media screen and (max-width: 768px) {
